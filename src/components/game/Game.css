@@ -1,0 +1,69 @@
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: "Zen Tokyo Zoo", cursive;
+    position: relative;
+}
+
+.rowContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cell {
+    width: 13em;
+    height: 9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 3px solid #fffffe;
+
+}
+
+.cell:hover {
+    background-color: #abd1c6;
+}
+
+.stopper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    cursor: default;
+}
+
+.x {
+    font-size: 100px;
+    color: #f9bc60;
+}
+
+.x::after {
+    content: "X";
+}
+
+.o {
+    font-size: 100px;
+    color: #f9bc60;
+}
+
+.o::after {
+    content: "O";
+}
+
+.gameMenu {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    z-index: 99;
+    font-size: 30px;
+}
+
+.waitingText{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
